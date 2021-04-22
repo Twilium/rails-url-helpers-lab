@@ -36,7 +36,7 @@ describe 'Show page' do
   it 'renders the last name in a h1 tag' do
     visit student_path(@student)
     expect(page).to have_css("h1", text: "Targaryen")
-  end
+  end 
 
   it 'renders the active status if the user is inactive' do
     visit student_path(@student)
